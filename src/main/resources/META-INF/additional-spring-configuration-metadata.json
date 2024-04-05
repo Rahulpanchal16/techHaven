@@ -1,0 +1,132 @@
+{"properties": [
+  {
+    "name": "user.profile.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'user.profile.image.path'"
+  },
+  {
+    "name": "category.image",
+    "type": "java.lang.String",
+    "description": "A description for 'category.image'"
+  },
+  {
+    "name": "category.path",
+    "type": "java.lang.String",
+    "description": "A description for 'category.path'"
+  },
+  {
+    "name": "category.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'category.image.path'"
+  },
+  {
+    "name": "user.profile.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'user.profile.image.path'"
+  },
+  {
+    "name": "product.images.path",
+    "type": "java.lang.String",
+    "description": "A description for 'product.images.path'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "product.images.path",
+    "type": "java.lang.String",
+    "description": "A description for 'product.images.path'"
+  },
+  {
+    "name": "category.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'category.image.path'"
+  },
+  {
+    "name": "user.profile.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'user.profile.image.path'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "role.normal.id",
+    "type": "java.lang.String",
+    "description": "A description for 'role.normal.id'"
+  },
+  {
+    "name": "role.admin.id",
+    "type": "java.lang.String",
+    "description": "A description for 'role.admin.id'"
+  },
+  {
+    "name": "role.admin",
+    "type": "java.lang.String",
+    "description": "A description for 'role.admin'"
+  },
+  {
+    "name": "role.normal",
+    "type": "java.lang.String",
+    "description": "A description for 'role.normal'"
+  },
+  {
+    "name": "google.client.id",
+    "type": "java.lang.String",
+    "description": "A description for 'google.client.id'"
+  },
+  {
+    "name": "google.user.password",
+    "type": "java.lang.String",
+    "description": "A description for 'google.user.password'"
+  },
+  {
+    "name": "google.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'google.secret'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "google.user.password",
+    "type": "java.lang.String",
+    "description": "A description for 'google.user.password'"
+  },
+  {
+    "name": "user.profile.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'user.profile.image.path'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "product.images.path",
+    "type": "java.lang.String",
+    "description": "A description for 'product.images.path'"
+  },
+  {
+    "name": "user.profile.image.path",
+    "type": "java.lang.String",
+    "description": "A description for 'user.profile.image.path'"
+  }
+]}
