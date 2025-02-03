@@ -1,12 +1,13 @@
 package com.tech.haven;
 
-import java.io.IOException;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.UUID;
-
+import com.tech.haven.exceptions.ResourceNotFoundException;
+import com.tech.haven.helpers.InvoiceGeneration;
+import com.tech.haven.models.Cart;
+import com.tech.haven.models.Role;
+import com.tech.haven.models.User;
+import com.tech.haven.repositories.CartRepository;
+import com.tech.haven.repositories.RoleRepository;
+import com.tech.haven.repositories.UserRepository;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,15 +15,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.tech.haven.exceptions.ResourceNotFoundException;
-import com.tech.haven.helpers.InvoiceGeneration;
-import com.tech.haven.helpers.SendEmail;
-import com.tech.haven.models.Cart;
-import com.tech.haven.models.Role;
-import com.tech.haven.models.User;
-import com.tech.haven.repositories.CartRepository;
-import com.tech.haven.repositories.RoleRepository;
-import com.tech.haven.repositories.UserRepository;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 
 @SpringBootTest
 class ElectronicsStoreApplicationTests {
@@ -42,8 +40,8 @@ class ElectronicsStoreApplicationTests {
 	@Autowired
 	private InvoiceGeneration invoice;
 
-	@Autowired
-	private SendEmail emailSend;
+//	@Autowired
+//	private SendEmail emailSend;
 
 	@Value("${role.normal}")
 	String normalRoleId;
@@ -117,10 +115,10 @@ class ElectronicsStoreApplicationTests {
 	}
 
 
-	@Test
-	void sendSimpleEmail(){
-		emailSend.sendSimpleEmail("panchalrahul1603@gmail.com", "Test", "Testing smtp feature");
-	}
+//	@Test
+//	void sendSimpleEmail(){
+//		emailSend.sendSimpleEmail("panchalrahul1603@gmail.com", "Test", "Testing smtp feature");
+//	}
 
 	@Test
 	@Disabled

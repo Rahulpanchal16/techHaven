@@ -25,7 +25,7 @@ import com.tech.haven.dtos.UserDto;
 import com.tech.haven.exceptions.ResourceNotFoundException;
 import com.tech.haven.helpers.PageToPageableHelper;
 import com.tech.haven.helpers.PageableResponse;
-import com.tech.haven.helpers.SendEmail;
+//import com.tech.haven.helpers.SendEmail;
 import com.tech.haven.models.Role;
 import com.tech.haven.models.User;
 import com.tech.haven.repositories.RoleRepository;
@@ -57,8 +57,8 @@ public class UserServiceImplementation implements UserService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
-	@Autowired
-	private SendEmail sendMail;
+//	@Autowired
+//	private SendEmail sendMail;
 
 	@Override
 	public UserDto createUser(UserDto userDto) throws MessagingException, InterruptedException {
@@ -75,8 +75,8 @@ public class UserServiceImplementation implements UserService {
 		createdUser.getRoles().add(role);
 
 		User savedUser = this.userRepo.save(createdUser);
-		sendMail.sendSimpleEmail(userDto.getEmail(), "Welcome to Tech Haven", "Hello, " + userDto.getName() + "\n"
-				+ "Welcome to , India's largest Online electronic store\n your account is successfully created\nThankyou, TechHaven team");
+//		sendMail.sendSimpleEmail(userDto.getEmail(), "Welcome to Tech Haven", "Hello, " + userDto.getName() + "\n"
+//				+ "Welcome to , India's largest Online electronic store\n your account is successfully created\nThankyou, TechHaven team");
 		UserDto savedUserDto = this.modelMapper.map(savedUser, UserDto.class);
 		return savedUserDto;
 	}

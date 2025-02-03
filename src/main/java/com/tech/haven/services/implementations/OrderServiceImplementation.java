@@ -24,7 +24,7 @@ import com.tech.haven.helpers.OrderStatus;
 import com.tech.haven.helpers.PageToPageableHelper;
 import com.tech.haven.helpers.PageableResponse;
 import com.tech.haven.helpers.PaymentStatus;
-import com.tech.haven.helpers.SendEmail;
+//import com.tech.haven.helpers.SendEmail;
 import com.tech.haven.models.Cart;
 import com.tech.haven.models.CartItem;
 import com.tech.haven.models.Order;
@@ -52,8 +52,8 @@ public class OrderServiceImplementation implements OrderService {
 	@Autowired
 	private ModelMapper modelMapper;
 
-	@Autowired
-	private SendEmail sendEmail;
+//	@Autowired
+//	private SendEmail sendEmail;
 
 	@Autowired
 	private InvoiceGeneration invoiceGenerate;
@@ -147,8 +147,6 @@ public class OrderServiceImplementation implements OrderService {
 			order.setPaymentStatus(PaymentStatus.COMPLETED);
 			order.setExpectedDeliveryDate(order.getOrderedOn().plusDays(5));
 			invoiceGenerate.createPdf(orderId);
-			sendEmail.sendEmail(order.getUser().getEmail(), "Order Invoice", "Order Invoice",
-					order.getUser().getName(), orderId);
 		}
 		Order updatedOrder = this.orderRepo.save(order);
 		return this.modelMapper.map(updatedOrder, OrderDto.class);
